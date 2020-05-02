@@ -8,16 +8,12 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-// import InboxIcon from '@material-ui/icons/MoveToInbox';
-// import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
 
 import WatchIcon from '@material-ui/icons/WatchTwoTone';
 import Delivery from '@material-ui/icons/OpenWith';
 import Basket from '@material-ui/icons/ShoppingCartTwoTone';
 import Filter from '@material-ui/icons/FilterListRounded';
-// import green from '@material-ui/core/colors/green';
-// import lightBlue from '@material-ui/core/colors/lightBlue'
 import { deepOrange, lightBlue, green } from '@material-ui/core/colors';
 
 
@@ -85,13 +81,17 @@ export const AppDrawer = ()=> {
   return (
     <div>
       {['left'].map((anchor) => (
+
         <React.Fragment key={anchor}>
+
           <IconButton onClick={toggleDrawer(anchor, true)} color="inherit">
-            {<MenuIcon />}
+            {<MenuIcon fontSize='large'/>}
           </IconButton>
+
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
           </Drawer>
+
         </React.Fragment>
       ))}
     </div>

@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
-// import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import { deepOrange } from '@material-ui/core/colors';
 
 
@@ -12,6 +11,15 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
     },
   },
+  fab: {
+    margin: theme.spacing(2),
+  },
+  absolute: {
+    position: 'relative',
+    top: theme.spacing(65),
+    left: theme.spacing(3),
+    zIndex: 0,
+  },
 }));
 
 export const AddButton = ()=> {
@@ -19,9 +27,15 @@ export const AddButton = ()=> {
 
   return (
     <div className={classes.root}>
-      <Fab aria-label="add" style={{background: deepOrange['300'], position: 'absolute', bottom: 0, right: 0}} color="primary" edge='end'>
+
+      {/* <Fab aria-label="add" style={{background: deepOrange['300']}} color="primary" edge='end'>
         <AddIcon />
+      </Fab> */}
+
+      <Fab color= "secondary" className={classes.absolute} style={{background: deepOrange['300']}}>
+          <AddIcon />
       </Fab>
+
     </div>
   );
 }
