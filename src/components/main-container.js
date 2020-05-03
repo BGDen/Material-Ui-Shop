@@ -5,7 +5,7 @@ import Container from '@material-ui/core/Container';
 
 import {AppHeader} from './header';
 import { brown } from '@material-ui/core/colors';
-// import {AddButton} from './add-button';
+import {AddButton} from './small-component/MainContainer-AddButton';
 
 
 export const SimpleContainer = ()=> {
@@ -17,7 +17,7 @@ export const SimpleContainer = ()=> {
         <AppHeader />
         
         <Typography component="div" style={{ backgroundColor: brown[100], height: '100vh' }}>
-          {/* <AddButton /> */}
+          <AddButton />
         </Typography>
 
       </Container>

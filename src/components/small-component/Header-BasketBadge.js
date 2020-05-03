@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
 const StyledBadge = withStyles((theme) => ({
   badge: {
     right: -3,

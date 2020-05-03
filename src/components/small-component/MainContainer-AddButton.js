@@ -15,11 +15,10 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(2),
   },
   absolute: {
-    position: 'relative',
-    top: theme.spacing(65),
-    left: theme.spacing(3),
-    zIndex: 0,
-  },
+    position: 'absolute',
+    bottom: theme.spacing(2),
+    right: theme.spacing(3),
+   },
 }));
 
 export const AddButton = ()=> {
