@@ -7,6 +7,8 @@ import {AppHeader} from './header';
 import { brown } from '@material-ui/core/colors';
 import {AddButton} from './small-component/MainContainer-AddButton';
 
+import RenderCards from './render-card';
+
 
 export const SimpleContainer = ()=> {
   return (
@@ -16,7 +18,8 @@ export const SimpleContainer = ()=> {
 
         <AppHeader />
         
-        <Typography component="div" style={{ backgroundColor: brown[100], height: '100vh' }}>
+        <Typography component="div" style={{ backgroundColor: brown[100], height: '' }}>
+          <RenderCards />
           <AddButton />
         </Typography>
 
