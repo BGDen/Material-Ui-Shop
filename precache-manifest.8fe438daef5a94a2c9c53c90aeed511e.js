@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "68f8dea00b2607329dfc643285da13cf",
+    "revision": "66a24f533b5c72c40e9f54ed88e7299f",
     "url": "/Material-Ui-Shop/index.html"
   },
   {
-    "revision": "cfa109940e42688e4e99",
+    "revision": "5c09c254d7c74d5b7039",
     "url": "/Material-Ui-Shop/static/css/2.8bb66684.chunk.css"
   },
   {
-    "revision": "722f14c0a8d4949a6c32",
+    "revision": "d1462df8401a4d452140",
     "url": "/Material-Ui-Shop/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "cfa109940e42688e4e99",
-    "url": "/Material-Ui-Shop/static/js/2.e87c2743.chunk.js"
+    "revision": "5c09c254d7c74d5b7039",
+    "url": "/Material-Ui-Shop/static/js/2.cd8aefac.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/Material-Ui-Shop/static/js/2.e87c2743.chunk.js.LICENSE.txt"
+    "url": "/Material-Ui-Shop/static/js/2.cd8aefac.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "722f14c0a8d4949a6c32",
-    "url": "/Material-Ui-Shop/static/js/main.44addf31.chunk.js"
+    "revision": "d1462df8401a4d452140",
+    "url": "/Material-Ui-Shop/static/js/main.210a788e.chunk.js"
   },
   {
     "revision": "6771564fdd30aa5bc5e9",
