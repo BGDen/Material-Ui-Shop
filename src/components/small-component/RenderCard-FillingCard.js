@@ -5,38 +5,27 @@ import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
+// import CardActions from '@material-ui/core/CardActions';
 // import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
-// import FavoriteIcon from '@material-ui/icons/Favorite';
-// import ShareIcon from '@material-ui/icons/Share';
-// import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { red, green } from '@material-ui/core/colors';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 335,
+    maxWidth: 315,
     flexGrow: 1,
-    
+    margin: 10,
   },
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
-  // expand: {
-  //   transform: 'rotate(0deg)',
-  //   marginLeft: 'auto',
-  //   transition: theme.transitions.create('transform', {
-  //     duration: theme.transitions.duration.shortest,
-  //   }),
-  // },
-  // expandOpen: {
-  //   transform: 'rotate(180deg)',
-  // },
   avatar: {
     backgroundColor: red[500],
   },
@@ -44,11 +33,6 @@ const useStyles = makeStyles((theme) => ({
 
 export const MediaCard = (props) => {
   const classes = useStyles();
-  // const [expanded, setExpanded] = React.useState(false);
-
-  // const handleExpandClick = () => {
-  //   setExpanded(!expanded);
-  // };
 
   return (
     <Card className={classes.root}>
@@ -71,22 +55,24 @@ export const MediaCard = (props) => {
         image={props.data.img}
         title="???"
       />
-      <CardContent>
+      <CardContent style={{paddingBottom: 14}}>
         <Typography variant="body2" color="textSecondary" component="p">
           This impressive paella is a perfect party dish and a fun meal to cook together with your
           guests. Add 1 cup of frozen peas along with the mussels, if you like.
         </Typography>
         <Typography gutterBottom variant="h5" component="h2">
+          <Grid container direction="row" justify="flex-end">
             {props.data.price}
+          </Grid>
         </Typography>
-        <CardActions>
-          <Button size="small" color="primary">
+        <Grid container direction="row" justify="space-between" alignItems="center">
+          <Button size="small" variant="outlined" style={{color: green['A700']}}>
             more info
           </Button>
-          <Button size="small" color="primary">
+          <Button size="small" variant="outlined" style={{color: red['A700']}}>
             buy now
           </Button>
-        </CardActions>
+        </Grid>
       </CardContent>
     </Card>
   );

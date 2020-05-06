@@ -1,5 +1,6 @@
 import React from 'react';
 import {MediaCard} from './small-component/RenderCard-FillingCard';
+import Grid from '@material-ui/core/Grid';
 
 
 export default class RenderCards extends React.Component {
@@ -26,32 +27,16 @@ export default class RenderCards extends React.Component {
           }
         });
         console.log(data);
-        // this.setState({searchData : data});
         this.setState({data});
       });
     }
 
-
-
     render(){
       return (
-        <div>
+        <Grid container direction="row" justify="space-evenly" alignItems="center">
           {this.state.data.map((msg)=> <MediaCard data={msg} key={msg.id} />)}
-        </div>
+        </Grid>
         );
     }
 
-  
 }
-
-/* <div className='wrapper'>
-<div className='navigation' onChange={this.searchingCards.bind(this)}>
-  <Navigation/>
-</div>
-
-<Dropdown options = {this.state.newArr} onChange = {this._onSelect} value = {this.state.newArr[0]} placeholder = "Выберите параметр" />
-
-<div className='render_all_card'>
-      {this.state.searchData.map((msg)=> <Card data={msg} key={msg.id} />)}
-</div>
-</div> */

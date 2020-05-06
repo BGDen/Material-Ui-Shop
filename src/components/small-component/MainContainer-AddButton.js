@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(2),
   },
   absolute: {
-    position: 'absolute',
+    position: 'fixed',
     bottom: theme.spacing(2),
     right: theme.spacing(3),
    },
@@ -26,10 +26,6 @@ export const AddButton = ()=> {
 
   return (
     <div className={classes.root}>
-
-      {/* <Fab aria-label="add" style={{background: deepOrange['300']}} color="primary" edge='end'>
-        <AddIcon />
-      </Fab> */}
 
       <Fab color= "secondary" className={classes.absolute} style={{background: deepOrange['300']}}>
           <AddIcon />
