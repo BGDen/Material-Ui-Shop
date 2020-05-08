@@ -7,8 +7,8 @@ import brown from '@material-ui/core/colors/brown';
 
 import {AppDrawer} from './drawer';
 // import {MenuPopup} from './small-component/Header-MoreMenu';
-import {CustomizedBadges} from './small-component/Header-BasketBadge';
 import {SearchInput} from './small-component/Header-SearchInput';
+import {ModalBasket} from './modal-basket'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -43,7 +43,7 @@ export const AppHeader = ()=> {
 
           <SearchInput />
 
-          <CustomizedBadges />
+          <ModalBasket/>
 
         </Toolbar>
       </AppBar>
